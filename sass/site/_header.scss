@@ -81,7 +81,7 @@ header#header{
                 position: relative;
                 top:0;
                 transform:translateY(0);
-                ul#primary-menu{
+                #primary-menu{
                     display:flex;
                     flex-wrap:nowrap;
                     list-style-type: none;
@@ -191,7 +191,7 @@ header#header{
                     padding-left: 50px;
                     z-index:9;
     
-                    ul#primary-menu{
+                    #primary-menu{
                         flex-wrap: wrap;
                         padding-left:0;
                         li{
