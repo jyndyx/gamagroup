@@ -1,0 +1,146 @@
+/**
+ * Global
+ */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+main#content{
+    background:$background_color;
+    margin-top:148px;
+    z-index: 1;
+    section{
+        padding:40px 0;
+    }
+}
+
+.site-container{
+    max-width:$container_max_width;
+    padding:0 $container_padding;
+    margin:0 auto;
+    width:100%;
+    box-sizing: border-box;
+}
+
+p{
+    color:$text_color;
+}
+
+a{
+    color:$primary_color;
+    transition:all $transition;
+
+    &:hover{
+        color:$secondary_color;
+    }
+}
+
+.primary{
+    color:$primary_color;
+}
+
+.secondary{
+    color:$secondary_color;
+}
+
+.highlight{
+    color:$highlight_color;
+}
+
+.accent{
+    color:$accent_color;
+}
+
+.split-line {
+    overflow: hidden;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary_color;
+    height:50px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    &.full-width{
+        width:100%;
+    }
+    svg{
+        margin-right:5px;
+    }
+    &:hover{
+        color:white;
+        background-color: $primary_color;
+    }
+}
+
+@media (min-width:$container_max_width){
+
+}
+@media (max-width:$query_lgscreen){
+
+}
+@media (max-width:$query_laptop){
+
+}
+@media (max-width:$query_tablet){
+    html{
+        font-size:20px;
+    }
+    #page{
+        overflow-x:clip;
+        &.overlay-active{
+            max-height:100vh;
+            height:100vh;
+            overflow:hidden;
+            header#header{
+                .site-container{
+                    #site-branding{
+                        opacity:0;
+                        z-index:-1;
+                        transition:$transition;
+                    }
+                    #site-navigation{
+                        .menu-main-navigation-container{
+                            top:50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:$query_mobile){
+    
+}
+
+
+// @media (min-width:$query_tablet){
+//     html{
+//         font-size:20px;
+//     }
+// }
+// @media (min-width:$query_laptop){
+    
+// }
+// @media (min-width:$query_lgscreen){
+
+// }
+
+// @media (min-width:$query_retina){
+    
+// }
+
+// @media (min-width:$container_max_width){
+
+// }
