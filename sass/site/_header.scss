@@ -198,6 +198,9 @@ header#header{
                             width:100%;
                             text-align: left;
                             &.current_page_item{
+                                a{
+                                    font-weight:600;
+                                }
                                 &:after{
                                     display:none;
                                 }
