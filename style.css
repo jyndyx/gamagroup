@@ -1251,6 +1251,7 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 		height: 80vh;
 		position: relative;
 		background: black;
+		padding: 10px;
 	}
 	#content.front-page #frontpage-slides img.background {
 		width: 100%;
@@ -1271,9 +1272,10 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 	}
 	#content.front-page #frontpage-slides .slide-content p {
 		font-size: 1rem;
+		font-weight: 400;
 	}
 	#content.front-page #frontpage-intro h3.tagline {
-		font-weight: 100;
+		font-weight: 400;
 	}
 	#content.front-page #services .site-container {
 		-webkit-column-gap: 0;
