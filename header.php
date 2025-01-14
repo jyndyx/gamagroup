@@ -28,7 +28,7 @@
 				<div class="cta-wrapper flex desktop">
 					<div class="cta-socials">
 						<a href="https://www.facebook.com/www.GamaGroup.ie/" target="_blank">
-							<img src='http://gama-group.local/wp-content/uploads/2025/01/facebook.png' />
+							<img src='<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/facebook.png' />
 						</a>
 					</div>
 					<div class="cta-phone flex v-top">
@@ -36,21 +36,21 @@
 							Call: 
 						</div>	
 						<div>
-							<a href="http://gama-group.local/contact-us/">0949031335</a> <br/>
-							<a href="http://gama-group.local/contact-us/">0868362248</a>
+							<a href="<?php echo get_site_url(); ?>/contact-us/">0949031335</a> <br/>
+							<a href="<?php echo get_site_url(); ?>/contact-us/">0868362248</a>
 						</div>
 					</div>
 					<div class="cta-email">
 						Email: <a href="mailto:info@gamagroup.ie">info@gamagroup.ie</a>
 					</div>
 					<div class="cta-contact">
-						<a href="http://gama-group.local/contact-us/" class="button">Contact Us Now</a>
+						<a href="<?php echo get_site_url(); ?>/contact-us/" class="button">Contact Us Now</a>
 					</div>
 				</div>
 				<div class="cta-wrapper flex mobile">
 					<a href="tel:0949031335" class="button white full-width">Call Us</a>
 					<a href="mailto:info@gamagroup.ie" class="button white full-width">Email Us</a>
-					<a href="http://gama-group.local/contact-us/" class="button full-width">Contact us now</a>
+					<a href="<?php echo get_site_url(); ?>/contact-us/" class="button full-width">Contact us now</a>
 				</div>
 			</div>
 			

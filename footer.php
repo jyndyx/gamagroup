@@ -65,7 +65,7 @@
 					<div class="column-4 flex">
 						<div class="icon">
 							<a href="https://www.facebook.com/www.GamaGroup.ie/" target="_blank">
-								<img src="http://192.168.1.8:8080/wp-content/uploads/2025/01/facebook.png" class="social"/>
+								<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/facebook.png" class="social"/>
 							</a>
 						</div>
 					</div>
