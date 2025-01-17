@@ -358,6 +358,11 @@ a:hover {
 	background-color: #93ac2c;
 }
 
+hr.wp-block-separator {
+	margin: 1.5em 0 .5em;
+	border-top: 1px solid;
+}
+
 @media (max-width: 965px) {
 	.site-container .fullwidth-row {
 		margin-left: calc(-1 * 20px);
@@ -448,7 +453,8 @@ body .sub-heading {
 }
 
 body h4 {
-	font-size: 1rem;
+	font-size: 1.375rem;
+	font-weight: 400;
 }
 
 body h5,
