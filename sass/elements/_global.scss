@@ -45,19 +45,19 @@ a{
     }
 }
 
-.primary{
+.primary, .has-primary-color{
     color:$primary_color;
 }
 
-.secondary{
+.secondary, .has-secondary-color{
     color:$secondary_color;
 }
 
-.highlight{
+.highlight, .has-highlight-color{
     color:$highlight_color;
 }
 
-.accent{
+.accent, .has-accent-color{
     color:$accent_color;
 }
 

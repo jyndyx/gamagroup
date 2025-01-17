@@ -307,19 +307,19 @@ a:hover {
 	color: #6c8114;
 }
 
-.primary {
+.primary, .has-primary-color {
 	color: #93ac2c;
 }
 
-.secondary {
+.secondary, .has-secondary-color {
 	color: #6c8114;
 }
 
-.highlight {
+.highlight, .has-highlight-color {
 	color: #f2f2f2;
 }
 
-.accent {
+.accent, .has-accent-color {
 	color: #49590b;
 }
 
