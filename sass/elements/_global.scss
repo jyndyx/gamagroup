@@ -23,7 +23,7 @@ main#content{
 .site-container{
     max-width:$container_max_width;
     padding:0 $container_padding;
-    margin:0 auto;
+    margin:0 auto!important;
     width:100%;
     box-sizing: border-box;
     .fullwidth-row{
@@ -57,7 +57,23 @@ a{
     color:$highlight_color;
 }
 
-.accent, .has-accent-color{
+.accent, .has-accent-background-color{
+    background-color:$accent_color;
+}
+
+.has-primary-background-color{
+    background-color:$primary_color;
+}
+
+.has-secondary-background-color{
+    background-color:$secondary_color;
+}
+
+.has-highlight-background-color{
+    background-color:$highlight_color;
+}
+
+.has-accent-color{
     color:$accent_color;
 }
 
