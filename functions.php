@@ -305,7 +305,7 @@ function get_the_right_row($name){
 }
 
 // Enable Gutenberg custom color palette
-function wpblockz_gutenberg_color_palette() {
+function pm_custom_color_palette() {
 	add_theme_support(
 		'editor-color-palette', array(
 			array(
@@ -346,8 +346,13 @@ function wpblockz_gutenberg_color_palette() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'wpblockz_gutenberg_color_palette' );
+add_action( 'after_setup_theme', 'pm_custom_color_palette' );
 
+// Enable excerpts on pages
+add_action( 'init', 'pm_add_excerpts_to_pages' );
+function pm_add_excerpts_to_pages() {
+    add_post_type_support( 'page', 'excerpt' );
+}
 /**
  * Register SASS variables from PHP
  */

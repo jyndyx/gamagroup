@@ -1,3 +1,7 @@
+.acf-block{
+    width:100%;
+}
+
 /**
  * Hero Block
  **/
@@ -127,6 +131,66 @@
     fill:white!important;
  }
 
+ /**
+ * Featured Service Block
+ **/
+
+ .featured-service-block{
+    display:flex;
+    column-gap:20px;
+ }
+
+ .featured-service-block .featured-service-wrapper{
+    flex:1;
+    text-align: center;
+    margin-bottom:30px;
+ }
+
+ .featured-service-block .featured-service-wrapper a.image{
+    position:relative;
+    display: block;
+    height: 0;
+    padding-top: 56.25%;
+    width: 100%;
+    background-color: #6c8114;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px;
+    overflow: hidden;
+ }
+
+ .featured-service-block .featured-service-wrapper a.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+ }
+
+ .featured-service-block .featured-service-wrapper a.image img:hover{
+    opacity:.5;
+    transition: 0.4s ease-in-out;
+ }
+
+ .featured-service-block .featured-service-wrapper h4{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #6c8114;
+    font-weight: 400;
+    margin: 20px 0;
+ }
+
+ .featured-service-block .featured-service-wrapper p{
+    padding-bottom:20px;
+ }
+
+ .featured-service-block .featured-service-wrapper .button svg{
+    margin-right: 5px;
+ }
 @media screen and (max-width:1200px){
 
 }

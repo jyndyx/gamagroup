@@ -275,7 +275,8 @@ main#content {
 	z-index: 1;
 }
 
-main#content section {
+main#content section,
+main#content .section-padding {
 	padding: 40px 0;
 }
 
