@@ -3,6 +3,7 @@
  **/
 .hero-block{
     margin-bottom: 2rem;
+    
 }
 .hero-block .block-wrapper{
     background-size:cover;
@@ -20,20 +21,111 @@
     align-items: center;
 }
 
-.hero-block .block-wrapper .overlay.light > *{
-    color:#242529;
-}
-
 .hero-block .block-wrapper .overlay .banner-heading{
     width:100%;
+    color: white;
 }
 
 .hero-block .block-wrapper .overlay p{
     width:60%;
-    color:rgba(255,255,255,.8);
+    color:white;
     font-size:1.2rem;
     line-height:1.5rem;
 }
+
+.hero-block .block-wrapper .overlay.light > *{
+    color:#242529;
+}
+
+.hero-block .block-wrapper .overlay .cta-wrapper{
+    width:100%;
+}
+
+.hero-block .block-wrapper .overlay .cta-wrapper .button{
+    width:270px;
+    margin:0 auto;
+    padding: 5px 0;
+    line-height:50px;
+    text-align: center;
+    border: 1px solid white;
+    background: #93ac2c;
+    color:white;
+    border-radius: 3px;
+    font-size:1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+ }
+
+ .hero-block .block-wrapper .overlay .cta-wrapper .button svg{
+    margin-right:8px;
+    transition:.4s all ease-in;
+    fill:white;
+ }
+
+ .hero-block .block-wrapper .overlay .cta-wrapper .button:hover{
+    background: #6c8114;
+ }
+
+
+/**
+ * Callout Block
+ **/
+
+.callout-block .block-wrapper{
+    padding: 20px;
+    color: white;
+ }
+
+.callout-block .block-wrapper .site-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+ }
+
+ .callout-block .block-wrapper .site-container .callout-content{
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ .callout-block .block-wrapper .site-container .callout-content p{
+    color:white;
+    font-size:1.125rem;
+ }
+
+ .callout-block .block-wrapper .site-container .button{
+    margin-left:40px;
+    min-width:200px;
+    padding: 30px 0;
+    line-height:50px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: white;
+    border-radius: 3px;
+    font-weight:900;
+    font-size:1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+ }
+
+ .callout-block .block-wrapper .site-container .button svg{
+    margin-right:8px;
+    transition:.4s all ease-in;
+ }
+
+ .callout-block .block-wrapper .site-container .button:hover{
+    background: transparent;
+    color:white!important;
+ }
+
+ .callout-block .block-wrapper .site-container .button:hover svg{
+    fill:white!important;
+ }
 
 @media screen and (max-width:1200px){
 

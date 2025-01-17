@@ -13,7 +13,7 @@ html{
 
 main#content{
     background:$background_color;
-    margin-top:148px;
+    margin-top:120px;
     z-index: 1;
     section{
         padding:40px 0;
@@ -26,6 +26,10 @@ main#content{
     margin:0 auto;
     width:100%;
     box-sizing: border-box;
+    .fullwidth-row{
+        width:100vw;
+        margin-left:calc((((100vw - #{$container_max_width}) / 2) + #{$container_padding}) * -1);
+    }
 }
 
 p{
@@ -83,8 +87,14 @@ a{
     }
 }
 
-@media (min-width:$container_max_width){
-
+@media (max-width:$container_max_width){
+    .site-container{
+        .fullwidth-row{
+            margin-left:(calc(-1 * #{$container_padding}));
+            left:0;
+        }
+    }
+    
 }
 @media (max-width:$query_lgscreen){
 

@@ -304,6 +304,50 @@ function get_the_right_row($name){
     get_template_part($template_path);
 }
 
+// Enable Gutenberg custom color palette
+function wpblockz_gutenberg_color_palette() {
+	add_theme_support(
+		'editor-color-palette', array(
+			array(
+				'name'  => esc_html__( 'Primary', '@@textdomain' ),
+				'slug' => 'primary',
+				'color' => get_field('global_color_one', 'option'),
+			),
+			array(
+				'name'  => esc_html__( 'Secondary', '@@textdomain' ),
+				'slug' => 'secondary',
+				'color' => get_field('global_color_two', 'option'),
+			),
+			array(
+				'name'  => esc_html__( 'Highlight', '@@textdomain' ),
+				'slug' => 'highlight',
+				'color' => get_field('global_color_three', 'option'),
+			),
+			array(
+				'name'  => esc_html__( 'Accent', '@@textdomain' ),
+				'slug' => 'accent',
+				'color' => get_field('global_color_four', 'option'),
+			),
+			array(
+				'name'  => esc_html__( 'White', '@@textdomain' ),
+				'slug' => 'white',
+				'color' => '#fff',
+			),
+			array(
+				'name'  => esc_html__( 'Black', '@@textdomain' ),
+				'slug' => 'black',
+				'color' => '#000',
+			),
+			array(
+				'name'  => esc_html__( 'Gray', '@@textdomain' ),
+				'slug' => 'gray',
+				'color' => '#333',
+			)
+		)
+	);
+}
+add_action( 'after_setup_theme', 'wpblockz_gutenberg_color_palette' );
+
 /**
  * Register SASS variables from PHP
  */

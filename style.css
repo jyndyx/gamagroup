@@ -271,7 +271,7 @@ html {
 
 main#content {
 	background: #ffffff;
-	margin-top: 148px;
+	margin-top: 120px;
 	z-index: 1;
 }
 
@@ -286,6 +286,11 @@ main#content section {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+.site-container .fullwidth-row {
+	width: 100vw;
+	margin-left: calc((((100vw - 965px) / 2) + 20px) * -1);
 }
 
 p {
@@ -351,6 +356,13 @@ a:hover {
 .button:hover {
 	color: white;
 	background-color: #93ac2c;
+}
+
+@media (max-width: 965px) {
+	.site-container .fullwidth-row {
+		margin-left: calc(-1 * 20px);
+		left: 0;
+	}
 }
 
 @media (max-width: 991px) {
