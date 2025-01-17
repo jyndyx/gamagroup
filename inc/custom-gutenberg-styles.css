@@ -202,8 +202,24 @@
         font-size:1.2rem;
         line-height:1.5rem;
     }
+    
 
 }
 
 @media screen and (max-width:767px) {
+    .callout-block .block-wrapper .site-container{
+        flex-wrap:wrap;
+        justify-content: center;
+     }
+     .callout-block .block-wrapper .site-container .button{
+        margin-left:0;
+        margin-bottom:20px;
+     }
+    .featured-service-block{
+        flex-wrap:wrap;
+     }
+    .featured-service-block .featured-service-wrapper{
+        flex:unset;
+        width:100%;
+     }
 }
