@@ -5,7 +5,8 @@
 
     add_action( 'wp_footer', 
     function() { ?>
-        <script src="<?php echo get_site_url(); ?>/wp-content/themes/perlemedia/js/slider-min.js"></script>
+    'asldifjalsijflisj'
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider-min.js"></script>
     <?php }
     );
 
