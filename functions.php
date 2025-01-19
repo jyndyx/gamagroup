@@ -178,35 +178,6 @@ function codeless_file_types_to_uploads($file_types){
 	}
 add_filter('upload_mimes', 'codeless_file_types_to_uploads');
 
-
-/**
- * Custom Post Types
- */
-add_action('init', 'new_post_types');
-
-function new_post_types(){
-
-	// Services
-	register_post_type('services',
-		array(
-			'labels' => array(
-				'name' => __('Services', 'perlemedia-theme'),
-				'singular_name' => __('Service', 'perlemedia-theme'),
-				'add_new_item' => 'Add New',
-				'menu_name' => 'Services'
-			),
-			'public' => true,
-			'public_queryable' => true,
-			'has_archive' => false,
-			'supports' => array('thumbnail','title','editor'),
-			'rewrite' => array('slug' => 'services'),
-			'menu_icon' => 'dashicons-admin-tools',
-			'description' => 'Services offered',
-            'menu_position' => 4
-		)
-	);
-}
-
 /**
  * Custom login page logo
  */
