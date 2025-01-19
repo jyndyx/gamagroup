@@ -37,20 +37,20 @@
 							Call: 
 						</div>	
 						<div>
-							<a href="<?php echo get_site_url(); ?>/contact-us/">0949031335</a> <br/>
-							<a href="<?php echo get_site_url(); ?>/contact-us/">0868362248</a>
+							<a href="<?php echo get_site_url(); ?>/contact-us/"><?php echo get_field('company_phone', 'option');?></a> <br/>
+							<a href="<?php echo get_site_url(); ?>/contact-us/"><?php echo get_field('company_phone_secondary', 'option');?></a>
 						</div>
 					</div>
 					<div class="cta-email">
-						Email: <a href="mailto:info@gamagroup.ie">info@gamagroup.ie</a>
+						Email: <a href="mailto:<?php echo get_field('company_email', 'option');?>"><?php echo get_field('company_email', 'option');?></a>
 					</div>
 					<div class="cta-contact">
 						<a href="<?php echo get_site_url(); ?>/contact-us/" class="button">Contact Us Now</a>
 					</div>
 				</div>
 				<div class="cta-wrapper flex mobile">
-					<a href="tel:0949031335" class="button white full-width">Call Us</a>
-					<a href="mailto:info@gamagroup.ie" class="button white full-width">Email Us</a>
+					<a href="tel:<?php echo get_field('company_phone', 'option');?>" class="button white full-width">Call Us</a>
+					<a href="mailto:<?php echo get_field('company_email', 'option');?>" class="button white full-width">Email Us</a>
 					<a href="<?php echo get_site_url(); ?>/contact-us/" class="button full-width">Contact us now</a>
 				</div>
 			</div>

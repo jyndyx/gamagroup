@@ -28,9 +28,7 @@
 						</div>
 						<div class="content">
 							<strong>Gama Group</strong><br/>
-							Straide,<br/>
-							Co. Mayo<br/>
-							Ireland<br/>
+							<?php echo get_field('company_address', 'option');?>
 						</div>
 					</div>
 
@@ -44,8 +42,8 @@
 						</div>
 						<div class="content">
 							<strong>Phone</strong><br/>
-							<a href="tel:0949031335">0949031335</a><br/>
-							<a href="tel:0868362248">0868362248</a>
+							<a href="tel:<?php echo get_field('company_phone', 'option');?>"><?php echo get_field('company_phone', 'option');?></a><br/>
+							<a href="tel:<?php echo get_field('company_phone_secondary', 'option');?>"><?php echo get_field('company_phone_secondary', 'option');?></a>
 						</div>
 					</div>
 
@@ -59,7 +57,7 @@
 						</div>
 						<div class="content">
 							<strong>Email</strong><br/>
-							<a href="mailto:info@gamagroup.ie">info@gamagroup.ie</a>
+							<a href="mailto:<?php echo get_field('company_email', 'option');?>"><?php echo get_field('company_email', 'option');?></a>
 						</div>
 					</div>
 					<div class="column-4 flex">
@@ -73,24 +71,6 @@
 			</div><!-- .site-container -->
 		</section><!-- #footer-main -->
 
-		<!-- <section id="footer-socket">
-			<div class="site-container">
-				<div class="site-info">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'perlemedia' ) ); ?>">
-						<?php
-						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'perlemedia' ), 'WordPress' );
-						?>
-					</a>
-					<span class="sep"> | </span>
-						<?php
-						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Theme: %1$s by %2$s.', 'perlemedia' ), 'perlemedia', '<a href="http://underscores.me/">Underscores.me</a>' );
-						?>
-				</div>
-				
-			</div>
-		</section> -->
 	</footer><!-- #footer -->
 </div><!-- #page -->
 
