@@ -1,7 +1,3 @@
-<?php
-    $page = get_sub_field('featured_service_page');
-?>
-    
 <div class="featured-service-block">
     
     <?php if( have_rows('featured_services') ):

@@ -181,6 +181,89 @@ get_header();
 			</div>
 		</section>
 
+		<section id="slider">
+			<div class="carousel-wrapper">
+				<div class="carousel">
+					<div class="slide-wrapper initial">
+						<img class="background" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/slideshow-2.jpg">
+						<div class="slide-content flex">
+							<?php the_custom_logo(); ?>
+							<h2>Project Management</h2>
+							<p>
+								We provide clients all over Ireland with our highly experienced and efficient project management services.
+							</p>
+							<a class="button" href="//192.168.1.8:8080/project-management/">
+								<svg data-bbox="13 205 966 998" viewBox="0 0 992 1280" height="20" width="11" fill="#fff" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+									<g>
+										<path d="M397 1120q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L503 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23zm-384 0q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L119 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23z"></path>
+									</g>
+								</svg> 
+								Project Management
+							</a>
+						</div>
+					</div>
+
+					<div class="slide-wrapper">
+					<img class="background" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/slideshow-2.jpg">
+						<div class="slide-content flex">
+							<?php the_custom_logo(); ?>
+							<h2>Project Management</h2>
+							<p>
+								We provide clients all over Ireland with our highly experienced and efficient project management services.
+							</p>
+							<a class="button" href="//192.168.1.8:8080/project-management/">
+								<svg data-bbox="13 205 966 998" viewBox="0 0 992 1280" height="20" width="11" fill="#fff" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+									<g>
+										<path d="M397 1120q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L503 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23zm-384 0q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L119 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23z"></path>
+									</g>
+								</svg> 
+								Project Management
+							</a>
+						</div>
+					</div>
+					<div class="slide-wrapper">
+					<img class="background" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/slideshow-2.jpg">
+						<div class="slide-content flex">
+							<?php the_custom_logo(); ?>
+							<h2>Project Management</h2>
+							<p>
+								We provide clients all over Ireland with our highly experienced and efficient project management services.
+							</p>
+							<a class="button" href="//192.168.1.8:8080/project-management/">
+								<svg data-bbox="13 205 966 998" viewBox="0 0 992 1280" height="20" width="11" fill="#fff" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+									<g>
+										<path d="M397 1120q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L503 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23zm-384 0q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L119 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23z"></path>
+									</g>
+								</svg> 
+								Project Management
+							</a>
+						</div>
+					</div>
+					<div class="slide-wrapper">
+					<img class="background" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/01/slideshow-2.jpg">
+						<div class="slide-content flex">
+							<?php the_custom_logo(); ?>
+							<h2>Project Management</h2>
+							<p>
+								We provide clients all over Ireland with our highly experienced and efficient project management services.
+							</p>
+							<a class="button" href="//192.168.1.8:8080/project-management/">
+								<svg data-bbox="13 205 966 998" viewBox="0 0 992 1280" height="20" width="11" fill="#fff" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+									<g>
+										<path d="M397 1120q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L503 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23zm-384 0q0 13 10 23l50 50q10 10 23 10t23-10l466-466q10-10 10-23t-10-23L119 215q-10-10-23-10t-23 10l-50 50q-10 10-10 23t10 23l393 393-393 393q-10 10-10 23z"></path>
+									</g>
+								</svg> 
+								Project Management
+							</a>
+						</div>
+					</div>
+
+					<div class="carousel-button-next"></div>
+					<div class="carousel-button-prev"></div>
+				</div>
+			</div>
+		</section>
+
 		<!-- <section id="">
 			<div class="site-container">
 			</div>

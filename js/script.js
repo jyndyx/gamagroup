@@ -4,25 +4,9 @@
 function menuToggle(){
     const element = document.getElementById('menu-toggle');
     const body = document.getElementById('page');
-    const menuContainer = document.querySelector('#menu-toggle ~ .menu-main-navigation-container');
     element.classList.toggle('active');
     body.classList.toggle('overlay-active');
-
-    // if (element.classList.contains('active')){
-    //   setTimeout(function (){
-    //     menuContainer.style.display = 'block';
-    //   }, 1000)
-    // } else {
-    //   setTimeout(function (){
-    //     menuContainer.style.display = 'none';
-    //   }, 100)
-    // }
 }
-
-/* 
- * Get footer height in px
- */
-
 
 /* 
  * jQuery
@@ -40,9 +24,8 @@ jQuery(document).ready(function($) {
   function getHeightsOnResize(){
     footerHeight = $('#footer').height();
     headerHeight = $('#header').height();
-    console.log('footer= ' + footerHeight);
-    console.log('header= ' + headerHeight);
     contentSpace.css('margin-bottom', footerHeight);
   }
   window.addEventListener('resize', getHeightsOnResize);
 });
+

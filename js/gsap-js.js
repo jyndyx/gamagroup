@@ -107,34 +107,34 @@ jQuery(document).ready(function($) {
     /*
      * Mobile Menu Animation
      */
-    // const toggleMenu = document.querySelector('#menu-toggle');
-    // const tl = gsap.timeline({ reversed: true });
-    //     tl
-    // .from('header nav', {
-    //     duration: 0.4,
-    //     ease: 'power3.inOut',
-    //     top: '0',    
-    // })
-    // .from('#site-navigation li', {
-    //     duration: 0.3,
-    //     opacity: 0,
-    //     x: -30,
-    //     ease: 'power3.inOut',
-    //     stagger: 0.05,    
-    // });
+    const toggleMenu = document.querySelector('#menu-toggle');
+    const tl = gsap.timeline({ reversed: true });
+        tl
+    .from('header nav', {
+        duration: 0.4,
+        ease: 'power3.inOut',
+        top: '0',    
+    })
+    .from('#site-navigation li', {
+        duration: 0.3,
+        opacity: 0,
+        x: -30,
+        ease: 'power3.inOut',
+        stagger: 0.01,    
+    });
     
-    // function animateIt() {    
-    //     tl.reversed() ? tl.play() : tl.reverse()
-    // };
+    function animateIt() {    
+        tl.reversed() ? tl.play() : tl.reverse()
+    };
     
 
-    // var mediaQueryList = window.matchMedia('(min-width: 992px)'); // Mobile menu breakpoint
-    // if(mediaQueryList.matches) {
-    //     tl.pause(1)
-    // } else {
-    //     toggleMenu.addEventListener('click', animateIt);
-    //     tl.pause(0)
-    // }
+    var mediaQueryList = window.matchMedia('(min-width: 992px)'); // Mobile menu breakpoint
+    if(mediaQueryList.matches) {
+        tl.pause(1)
+    } else {
+        toggleMenu.addEventListener('click', animateIt);
+        tl.pause(0)
+    }
 
     // Handle screen resizing
     function toggleStateOnResize(e) {

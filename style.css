@@ -448,14 +448,14 @@ body h6 {
 
 body h1,
 body .banner-heading {
-	font-size: 3.4375rem;
+	font-size: 2.815rem;
 	line-height: 1.8em;
 	text-transform: uppercase;
 }
 
 body h2,
 body .main-heading {
-	font-size: 2.815rem;
+	font-size: 2.3125rem;
 	line-height: 1.6em;
 	text-transform: uppercase;
 }
@@ -805,6 +805,7 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li {
 		width: 100%;
 		text-align: left;
+		opacity: 1;
 	}
 	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.current_page_item a {
 		font-weight: 600;
