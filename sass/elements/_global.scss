@@ -11,6 +11,10 @@ html{
     box-sizing: border-box;
 }
 
+body.admin-bar header#header{
+    margin-top:30px;
+}
+
 main#content{
     background:$background_color;
     margin-top:150px;
