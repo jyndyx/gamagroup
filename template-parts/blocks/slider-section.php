@@ -5,7 +5,6 @@
 
     add_action( 'wp_footer', 
     function() { ?>
-    'asldifjalsijflisj'
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider-min.js"></script>
     <?php }
     );
