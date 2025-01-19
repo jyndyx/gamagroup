@@ -209,33 +209,36 @@ function my_remove_update_nag($value) {
 	return $value;
 }
 
-
 /**
  * ACF Options Pages
  */
 if( function_exists('acf_add_options_page') ) {
-
-	acf_add_options_page(array(
-		'page_title' 	=> 'Homepage Fields',
-		'menu_title'	=> 'Homepage',
-		'menu_slug' 	=> 'home-section',
-		'icon_url' 		=> 'dashicons-admin-home',
-		'position' 		=> 4,
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	));	
-
 	acf_add_options_page(array(
 		'page_title' 	=> 'Site Branding',
 		'menu_title'	=> 'Site Branding',
 		'menu_slug' 	=> 'branding-section',
 		'icon_url' 		=> 'dashicons-art',
-		'position' 		=> 2,
+		'position' 		=> 1,
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));	
 }
 
+/**
+ * Rearrange WP Menu Items
+ */
+add_filter( 'custom_menu_order', 'pm_custom_menu_order', 10, 1 );
+add_filter( 'menu_order', 'pm_custom_menu_order', 10, 1 );
+function pm_custom_menu_order( $menu_ord ) {
+     if ( !$menu_ord ) return true;
+     return array(
+          'index.php', // Dashboard
+		  'branding-section', // Branding
+          'edit.php?post_type=page', // Pages
+		  'separator1', // Separator
+		  'upload.php' // Media
+     );
+}
 
 /**
  * Register ACF Gutengerg Blocks (Flex Content)
