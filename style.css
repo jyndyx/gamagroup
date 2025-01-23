@@ -675,7 +675,7 @@ form.wpcf7-form label .wpcf7-form-control-wrap textarea {
 	padding: 5px;
 }
 
-form.wpcf7-form input.submit {
+form.wpcf7-form input[type=submit] {
 	background: #93ac2c;
 	color: white;
 	border: none;
@@ -685,7 +685,7 @@ form.wpcf7-form input.submit {
 	transition: 0.4s ease-in-out;
 }
 
-form.wpcf7-form input.submit:hover {
+form.wpcf7-form input[type=submit]:hover {
 	background: #6c8114;
 	-webkit-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;

@@ -25,7 +25,7 @@ form{
                 }
             }
         }
-        input.submit{
+        input[type=submit]{
             background: $primary_color;
             color: white;
             border: none;
