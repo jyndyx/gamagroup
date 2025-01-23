@@ -1,6 +1,32 @@
 /**
  * Forms
  */
+
+form{
+    &.wpcf7-form{
+        display:flex;
+        flex-wrap:wrap;
+        .full {
+            width:100%;
+        }
+        .half{
+            width:50%;
+        }
+        label{
+            display:block;
+            width:100%;
+            .wpcf7-form-control-wrap{
+                display:block;
+                width:100%;
+                input{
+                    width:100%;
+                    padding:5px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width:$container_max_width){
 
 }
@@ -14,5 +40,11 @@
 
 }
 @media (max-width:$query_mobile){
-
+    form{
+        &.wpcf7-form{
+            .half{
+                width:100%;
+            }
+        }
+    }
 }
