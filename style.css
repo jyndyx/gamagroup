@@ -463,6 +463,12 @@ hr.wp-block-separator {
 	}
 }
 
+@media (max-width: 768px) {
+	ul.icon {
+		margin: 0;
+	}
+}
+
 /**
  * Typography
  */

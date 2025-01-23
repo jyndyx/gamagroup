@@ -282,7 +282,7 @@
 
 .carousel-wrapper .carousel .slide-wrapper .slide-content p {
 	text-align: center;
-	font-weight: 1;
+	font-weight: 400;
 	font-family: Helvetica, serif;
 	font-size: 1.5625rem;
 }
@@ -359,8 +359,8 @@
 	height: 30px;
 	top: 50%;
 	left: 54%;
-	border-right: 1px solid #333;
-	border-bottom: 1px solid #333;
+	border-right: 2px solid #333;
+	border-bottom: 2px solid #333;
 	-webkit-transform: translate(-50%, -50%) rotate(135deg);
 	        transform: translate(-50%, -50%) rotate(135deg);
 }
@@ -387,11 +387,14 @@
 }
 
 @media screen and (max-width:767px) {
+   .hero-block .block-wrapper .overlay{
+      padding: 2rem 20px;
+   }
     .callout-block .block-wrapper .site-container{
         flex-wrap:wrap;
         justify-content: center;
      }
-     .callout-block .block-wrapper .site-container .button{
+   .callout-block .block-wrapper .site-container .button{
         margin-left:0;
         margin-bottom:20px;
      }
@@ -402,4 +405,18 @@
         flex:unset;
         width:100%;
      }
+   .carousel-wrapper .carousel .slide-wrapper .slide-content {
+      padding: 20px;
+   }
+   .carousel-wrapper .carousel .slide-wrapper .slide-content p {
+      font-size: 1.125rem;
+   }
+   .carousel-wrapper .carousel .carousel-button-prev {
+      left: 10px;
+   }
+   
+   .carousel-wrapper .carousel .carousel-button-next {
+      right: 10px;
+   }
+
 }
