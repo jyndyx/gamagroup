@@ -291,11 +291,37 @@ main#content .section-padding {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	/* Custom styles for windows and doors page*/
 }
 
 .site-container .fullwidth-row {
 	width: 100vw;
 	margin-left: calc((((100vw - 965px) / 2) + 20px) * -1);
+}
+
+.site-container .windows-doors .wp-block-columns {
+	-webkit-column-gap: 0;
+	   -moz-column-gap: 0;
+	        column-gap: 0;
+}
+
+.site-container .windows-doors .wp-block-columns .wp-block-column {
+	padding: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.site-container .windows-doors .wp-block-columns .wp-block-column p {
+	line-height: 1.5em;
+}
+
+.site-container .windows-doors .wp-block-columns .wp-block-column .align-bottom {
+	margin-top: auto;
 }
 
 p {
@@ -377,6 +403,24 @@ a:hover {
 .button:hover {
 	color: white;
 	background-color: #93ac2c;
+}
+
+ul.icon li {
+	list-style-type: none;
+	position: relative;
+}
+
+ul.icon li::before {
+	content: '';
+	background-image: url(./images/bullet-arrow.svg);
+	background-size: cover;
+	width: 20px;
+	height: 17px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: -40px;
 }
 
 hr.wp-block-separator {

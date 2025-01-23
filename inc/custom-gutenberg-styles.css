@@ -137,6 +137,7 @@
 
  .featured-service-block{
     display:flex;
+    align-items: stretch;
     column-gap:20px;
  }
 
@@ -144,6 +145,8 @@
     flex:1;
     text-align: center;
     margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
  }
 
  .featured-service-block .featured-service-wrapper a.image{
@@ -186,6 +189,10 @@
 
  .featured-service-block .featured-service-wrapper p{
     padding-bottom:20px;
+ }
+
+ .featured-service-block .featured-service-wrapper .button{
+   margin-top:auto;
  }
 
  .featured-service-block .featured-service-wrapper .button svg{

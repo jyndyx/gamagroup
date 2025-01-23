@@ -35,6 +35,23 @@ main#content{
         width:100vw;
         margin-left:calc((((100vw - #{$container_max_width}) / 2) + #{$container_padding}) * -1);
     }
+    /* Custom styles for windows and doors page*/
+    .windows-doors{
+        .wp-block-columns{
+            column-gap:0;
+            .wp-block-column{
+                padding:$container_padding;
+                display: flex;
+                flex-direction: column;
+                & p{
+                    line-height:1.5em;
+                }
+                .align-bottom{
+                    margin-top:auto;
+                }
+            }
+        }
+    }
 }
 
 p{
@@ -105,6 +122,24 @@ a{
     &:hover{
         color:white;
         background-color: $primary_color;
+    }
+}
+
+ul.icon{
+    li{
+        list-style-type: none;
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url(./images/bullet-arrow.svg);
+            background-size: cover;
+            width: 20px;
+            height: 17px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -40px;
+        }
     }
 }
 
