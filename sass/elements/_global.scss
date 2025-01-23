@@ -35,7 +35,7 @@ main#content{
         width:100vw;
         margin-left:calc((((100vw - #{$container_max_width}) / 2) + #{$container_padding}) * -1);
     }
-    /* Custom styles for windows and doors page*/
+    /* Custom styles for windows and doors page */
     .windows-doors{
         .wp-block-columns{
             column-gap:0;
@@ -51,6 +51,10 @@ main#content{
                 }
             }
         }
+    }
+    /* Custom styles for Google Map Embed */
+    iframe.google-maps{
+        width:100%;
     }
 }
 

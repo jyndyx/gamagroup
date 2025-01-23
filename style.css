@@ -291,7 +291,8 @@ main#content .section-padding {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	/* Custom styles for windows and doors page*/
+	/* Custom styles for windows and doors page */
+	/* Custom styles for Google Map Embed */
 }
 
 .site-container .fullwidth-row {
@@ -322,6 +323,10 @@ main#content .section-padding {
 
 .site-container .windows-doors .wp-block-columns .wp-block-column .align-bottom {
 	margin-top: auto;
+}
+
+.site-container iframe.google-maps {
+	width: 100%;
 }
 
 p {
