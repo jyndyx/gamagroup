@@ -198,12 +198,48 @@ header#header{
                             width:100%;
                             text-align: left;
                             opacity:1;
-                            &.current_page_item{
+                            &.menu-item-has-children{
+                                position: relative;
+                                color:blue;
+                                .accordion-arrow{
+                                    position:absolute;
+                                    right:-20px;
+                                    top:0;
+                                    height: 100%;
+                                    width: 20px;
+                                }
+                                &.active{
+                                    .accordion-arrow{
+                                        svg{
+                                            transform:rotate(180deg);
+                                        }
+                                    }
+                                    ul.sub-menu{
+                                        display:block!important;
+                                        position: relative;
+                                        top: 0;
+                                        background: white;
+                                        li{
+                                            a{
+                                                padding-top: 0;
+                                                line-height: 1.25;
+                                                font-weight:400;
+                                                font-size: .9em;
+                                                text-transform: capitalize;
+                                            }
+                                            &.current_page_item{
+                                                a{
+                                                    font-weight:600;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.current_page_item, 
+                            &.current_page_parent{
                                 a{
                                     font-weight:600;
-                                }
-                                &:after{
-                                    display:none;
                                 }
                             }
                         }

@@ -920,11 +920,39 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 		text-align: left;
 		opacity: 1;
 	}
-	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.current_page_item a {
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children {
+		position: relative;
+		color: blue;
+	}
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children .accordion-arrow {
+		position: absolute;
+		right: -20px;
+		top: 0;
+		height: 100%;
+		width: 20px;
+	}
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children.active .accordion-arrow svg {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children.active ul.sub-menu {
+		display: block !important;
+		position: relative;
+		top: 0;
+		background: white;
+	}
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children.active ul.sub-menu li a {
+		padding-top: 0;
+		line-height: 1.25;
+		font-weight: 400;
+		font-size: .9em;
+		text-transform: capitalize;
+	}
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children.active ul.sub-menu li.current_page_item a {
 		font-weight: 600;
 	}
-	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.current_page_item:after {
-		display: none;
+	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.current_page_item a, header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.current_page_parent a {
+		font-weight: 600;
 	}
 	header#header .site-container #site-navigation #menu-toggle {
 		display: block;
