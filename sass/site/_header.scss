@@ -205,12 +205,13 @@ header#header{
                                 color:blue;
                                 .accordion-arrow{
                                     display: flex;
-                                    align-items: center;
+                                    align-items: flex-start;
                                     position:absolute;
                                     right:-20px;
                                     top:0;
-                                    height: 100%;
                                     width: 20px;
+                                    height: 100%;
+                                    padding-top: .9rem;
                                 }
                                 &.active{
                                     .accordion-arrow{

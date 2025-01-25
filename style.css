@@ -932,14 +932,15 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 		position: absolute;
 		right: -20px;
 		top: 0;
-		height: 100%;
 		width: 20px;
+		height: 100%;
+		padding-top: .9rem;
 	}
 	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu li.menu-item-has-children.active .accordion-arrow svg {
 		-webkit-transform: rotate(180deg);
