@@ -1010,13 +1010,14 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 		position: relative;
 		margin-bottom: -148px;
 	}
+	header#header .site-container #site-branding .custom-logo-link img {
+		height: 45px;
+	}
 	header#header #cta-bar {
 		background-color: transparent;
 	}
 	header#header #cta-bar .site-container .cta-wrapper.mobile {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		display: none;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;

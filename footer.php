@@ -27,7 +27,7 @@
 							</svg>
 						</div>
 						<div class="content">
-							<strong>Gama Group</strong><br/>
+							<strong>GAMA Group</strong><br/>
 							<?php echo get_field('company_address', 'option');?>
 						</div>
 					</div>

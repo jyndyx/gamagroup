@@ -311,12 +311,22 @@ header#header{
     @media (max-width:$query_mobile){
         position:relative;
         margin-bottom:-148px;
+        .site-container{
+            #site-branding{
+                .custom-logo-link{
+                    img{
+                        height:45px;
+                    }
+                }
+            }
+        }
         #cta-bar{
             background-color: transparent;
             .site-container{
                 .cta-wrapper{
                     &.mobile{
-                        display:flex;
+                        // display:flex;
+                        display:none;
                         flex-direction: column;
                         .button{
                             margin:5px;
