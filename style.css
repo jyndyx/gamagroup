@@ -910,8 +910,9 @@ header#header .site-container #site-navigation .menu-main-navigation-container #
 		top: 50%;
 		-webkit-transform: translateY(-50%);
 		        transform: translateY(-50%);
-		width: 80%;
 		padding-left: 50px;
+		padding-right: 100px;
+		width: 100%;
 		z-index: 9;
 	}
 	header#header .site-container #site-navigation .menu-main-navigation-container #primary-menu {
