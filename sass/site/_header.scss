@@ -88,7 +88,9 @@ header#header{
                     li{
                         text-align:center;
                         position:relative;
-                        
+                        .accordion-arrow{
+                            display: none;
+                        }
                         a{
                             text-decoration: none;
                             color:$header_primary;
@@ -202,6 +204,8 @@ header#header{
                                 position: relative;
                                 color:blue;
                                 .accordion-arrow{
+                                    display: flex;
+                                    align-items: center;
                                     position:absolute;
                                     right:-20px;
                                     top:0;
@@ -220,12 +224,16 @@ header#header{
                                         top: 0;
                                         background: white;
                                         li{
+                                            
                                             a{
                                                 padding-top: 0;
                                                 line-height: 1.25;
                                                 font-weight:400;
                                                 font-size: .9em;
                                                 text-transform: capitalize;
+                                                &:hover{
+                                                    background:transparent;
+                                                }
                                             }
                                             &.current_page_item{
                                                 a{
