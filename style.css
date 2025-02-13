@@ -258,8 +258,15 @@ template {
 /**
  * Global
  */
-.grecaptcha-badge {
+.grecaptcha-badge,
+.cky-btn-revisit-wrapper {
 	display: none;
+}
+
+.cky-btn-revisit-wrapper.cky-revisit-hide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 * {
