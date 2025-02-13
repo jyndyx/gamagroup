@@ -4,10 +4,10 @@
 
 .grecaptcha-badge,
 .cky-btn-revisit-wrapper{
-   display:none;
+   display:none!important;
 }
 .cky-btn-revisit-wrapper.cky-revisit-hide{
-    display:flex;
+    display:flex!important;
 }
 
 *{

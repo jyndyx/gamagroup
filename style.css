@@ -260,13 +260,13 @@ template {
  */
 .grecaptcha-badge,
 .cky-btn-revisit-wrapper {
-	display: none;
+	display: none !important;
 }
 
 .cky-btn-revisit-wrapper.cky-revisit-hide {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
 }
 
 * {
