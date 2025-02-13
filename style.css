@@ -258,6 +258,10 @@ template {
 /**
  * Global
  */
+.grecaptcha-badge {
+	display: none;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
