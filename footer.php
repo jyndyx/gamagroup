@@ -76,5 +76,11 @@
 
 <?php wp_footer(); ?>
 
+<!-- Buttonizer -->
+<script type="text/javascript">
+	(function(n,t,c){var o=t.createElement("script");o.async=!0,o.src="https://cdn.buttonizer.io/embed.js",o.onload=function(){window.Buttonizer.init(c)},t.head.appendChild(o)})(window,document,"525be57d-3a15-42f6-afad-5700963822b1");
+</script>
+<!-- End Buttonizer -->
+ 
 </body>
 </html>
