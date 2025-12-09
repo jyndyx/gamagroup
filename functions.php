@@ -96,7 +96,8 @@ add_action( 'after_setup_theme', 'perlemedia_content_width', 0 );
 function perlemedia_scripts() {
 	// CSS
 	wp_enqueue_style( 'perlemedia-style', get_stylesheet_uri(), array(), _S_VERSION );
-	
+	wp_enqueue_style( 'perlemedia-gutenberg-styles', get_template_directory_uri() . '/inc/custom-gutenberg-styles.css', array(), _S_VERSION );
+
 	// JS
 	wp_enqueue_script( 'perlemedia-js', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 
